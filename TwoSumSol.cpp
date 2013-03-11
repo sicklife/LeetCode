@@ -5,17 +5,9 @@
  *      Author: root
  */
 
-#include "TwoSumSol.h"
 #include <stdio.h>
 using namespace std;
-TwoSumSol::TwoSumSol() {
-	// TODO Auto-generated constructor stub
-	target=0;
-}
-vector<int> TwoSumSol::twoSum(vector<int> &numbers, int target) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
-
+vector<int> twoSum(vector<int> &numbers, int target) {
         int len=numbers.size();
         vector<int> index;
         vector<int> substract (len);
@@ -32,15 +24,11 @@ vector<int> TwoSumSol::twoSum(vector<int> &numbers, int target) {
         }
    return index;
 }
-TwoSumSol::~TwoSumSol() {
-	// TODO Auto-generated destructor stub
-}
 int main(){
-	TwoSumSol test;
 	vector<int> resultindex;
 	int myints[4]={2,7,8,9};
 	vector<int> inputarray(myints,myints+sizeof(myints)/sizeof(int));
-	resultindex=test.twoSum(inputarray,17);
+	resultindex=twoSum(inputarray,17);
 	for(int i=0; i<resultindex.size(); i++)
 		printf("index:%d, ",resultindex[i]);
 }
