@@ -5,19 +5,12 @@
  *      Author: root
  */
 
-#include "FindMedian.h"
 #include <algorithm>
 #include <iostream>
 #include <stdio.h>
 using namespace std;
-FindMedian::FindMedian() {
-	// TODO Auto-generated constructor stub
-     m=0;
-     n=0;
-}
 
-
-int FindMedian::FindMedianTwoSortedArrays(int A[],int m,int B[],int n){
+int FindMedianTwoSortedArrays(int A[],int m,int B[],int n){
 	int location;
 	int *a,*b;
 	a=A;
@@ -39,15 +32,10 @@ int FindMedian::FindMedianTwoSortedArrays(int A[],int m,int B[],int n){
 	return med;
 }
 
-FindMedian::~FindMedian() {
-	// TODO Auto-generated destructor stub
-}
-
 int main(){
-	FindMedian test;
 	int first[]={1,2,6,6,7};
 	int second[]={3,7,9,30,50};
 	int result;
-	result=test.FindMedianTwoSortedArrays(first,5,second,4);
+	result=FindMedianTwoSortedArrays(first,5,second,4);
 	cout<<result<<endl;
 }
