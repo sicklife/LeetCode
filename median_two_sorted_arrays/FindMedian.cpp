@@ -2,7 +2,7 @@
  * FindMedian.cpp
  *
  *  Created on: Mar 11, 2013
- *      Author: root
+ *      Author: yning
  */
 
 #include <algorithm>
