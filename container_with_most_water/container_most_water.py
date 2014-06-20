@@ -16,8 +16,6 @@ def main():
     i = 0
     j = n - 1
     # iterate all possible solution to find the maximum area of rectangle min(ai, aj) * abs(j - i)
-    for i in range(0,n):
-    	for j in range(i+1,n):
     while (i < j):
     	area = 0
    	if (intlist[i] < intlist[j]):
