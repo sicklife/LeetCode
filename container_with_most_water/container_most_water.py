@@ -13,15 +13,23 @@ def main():
     maxarea = 0
     max_i = 0
     max_j = 0
+    i = 0
+    j = n - 1
     # iterate all possible solution to find the maximum area of rectangle min(ai, aj) * abs(j - i)
     for i in range(0,n):
     	for j in range(i+1,n):
-    		min_int = min(intlist[i],intlist[j])
-    		area = min_int * abs(j-i)
-    		if area > maxarea:
-    			max_i = i
-    			max_j = j
-    			maxarea = area
+    while (i < j):
+    	area = 0
+   	if (intlist[i] < intlist[j]):
+    		area = intlist[i] * abs(j-i)
+    	else:
+    		area = intlist[j] * abs(j-i)
+    		j -= 1
+    	
+    	if area > maxarea:
+    		max_i = i
+    		max_j = j
+    		maxarea = area
     print "a[1] to a[n] is "+ str(intlist)
     print "Maximum water in the container: %s, from a[%s] to a[%s]" %(maxarea, max_i, max_j)
 
