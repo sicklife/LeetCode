@@ -9,8 +9,6 @@ def main():
 	mystr = sys.argv[1]
 	print mystr
 	reverse_mystr = mystr[::-1]
-	#for i in range(0, len(mystr)):
-	#	reverse_mystr[i] = mystr[len(mystr)-1-i]
 
 	print reverse_mystr
 	longest = 0
