@@ -41,7 +41,8 @@ def main():
 				longest_begin = i
 				max_len = l
 
-	print "Length of Longest Palindromic Substring:%s, which is:%s" % (max_len, mystr[longest_begin:longest_begin+max_len])
+	print "Length of Longest Palindromic Substring:%s, which is:%s" 
+		% (max_len, mystr[longest_begin:longest_begin+max_len])
 if __name__ == '__main__':
     main()
 
