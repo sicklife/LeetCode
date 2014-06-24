@@ -7,5 +7,5 @@ A palindrome is a string which reads the same in both directions. For example, â
 
 Run the program:
   ```bash
-python longest_palindromic_substring abcbabb
+python longest_palindromic_substring.py abcbabb
   ```
