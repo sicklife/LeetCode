@@ -10,3 +10,10 @@ Input is guaranteed to be within the range from 1 to 3999.
 - C = 100;
 - D = 500;
 - M = 1000;
+
+
+Run the program:
+   ```bash
+python integer_to_roman.py 123
+python  integer_to_roman.py 49
+   ```
