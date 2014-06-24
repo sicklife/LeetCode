@@ -4,3 +4,8 @@ Given a string S, find the longest palindromic substring in S. You may assume th
 
 
 A palindrome is a string which reads the same in both directions. For example, “aba” is a palindome, “abc” is not.
+
+Run the program:
+  ```bash
+python longest_palindromic_substring abcbabb
+  ```
