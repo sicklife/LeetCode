@@ -11,3 +11,9 @@ Some hints:
 - You could also try reversing an integer. However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. How would you handle such case?
 
 - There is a more generic way of solving this problem.
+
+
+Run the program:
+  ```bash
+python palindrome_number.py 32323
+  ```
