@@ -20,3 +20,8 @@ isMatch("aa", ".*") → true
 isMatch("ab", ".*") → true
 isMatch("aab", "c*a*b") → true
 ```
+Run the program:
+  ```bash
+python regular_expression_matching.py "aa" "abab"
+python regular_expression_matching.py "aa" "a*"
+  ```
