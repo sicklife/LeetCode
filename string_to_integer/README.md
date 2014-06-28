@@ -15,3 +15,9 @@ Several special inputs:
 4. calculate real value
 5. handle min & max
 ```
+
+Run the program:
+```
+python string_to_integer.py -123
+python string_to_integer.py 65245243513451
+```
