@@ -6,3 +6,12 @@ Implement atoi to convert a string to an integer.
 
 - Notes: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
 
+Several special inputs:
+
+```
+1. null or empty string
+2. white spaces
+3. +/- sign
+4. calculate real value
+5. handle min & max
+```
