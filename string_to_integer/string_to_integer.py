@@ -27,12 +27,6 @@ def string_to_int(mystr):
 	if fg == '-':
 		result = -result
 
-	if result > sys.maxint:
-		return sys.maxint
-
-	if result < (-sys.maxint-1):
-		return sys.minint
-
 	return int(result)
 def main():
 	mystr = sys.argv[1]
