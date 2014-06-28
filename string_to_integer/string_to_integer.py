@@ -28,6 +28,7 @@ def string_to_int(mystr):
 		result = -result
 
 	return int(result)
+
 def main():
 	mystr = sys.argv[1]
 	result = string_to_int(mystr)		
