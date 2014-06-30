@@ -4,6 +4,8 @@ Given a digit string, return all possible letter combinations that the number co
 
 A mapping of digit to letters (just like on the telephone buttons) is given below.
 
+[![Example](telephone.png)](https://raw.github.com/yning/Interview-Questions/master/telephone.png)
+
 ```
 Input:Digit string "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
