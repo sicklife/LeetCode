@@ -15,5 +15,5 @@ convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
 Run the program:
 ```
-python zigzag.py "ashbzdsdfasdfasdfa" 3
+python zigzag_conversion.py "ashbzdsdfasdfasdfa" 3
 ```
