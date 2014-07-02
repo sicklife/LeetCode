@@ -14,9 +14,9 @@ int reversDigits(int x)
     else return rev_num;
 }
  
-int main()
+int main(int argc, char *argv[])
 {
-    int num = 4562;
+    int num = atoi(argv[0]);
     printf("Reverse of no. is %d", reversDigits(num));
  
     getchar();
