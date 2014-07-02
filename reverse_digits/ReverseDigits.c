@@ -1,14 +1,17 @@
 #include<stdlib.h>
 #include<stdio.h>
-int reversDigits(int num)
+int reversDigits(int x)
 {
     int rev_num = 0;
+    int num = x;
+    if (x < 0) num = -x;
     while (num > 0)
     {
         rev_num = rev_num * 10 + num % 10;
         num = num / 10;
     }
-    return rev_num;
+    if (x < 0) return -rev_num;
+    else return rev_num;
 }
  
 int main()
