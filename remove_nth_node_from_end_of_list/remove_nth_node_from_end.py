@@ -19,7 +19,7 @@ def removeNthFromEnd(head, n):
     	first_ptr = head
     	second_ptr = head
     	while (j<n):
-    		if second_ptr.next != None:
+    		if second_ptr.next:
     			second_ptr = second_ptr.next
     			j += 1
 
@@ -28,7 +28,7 @@ def removeNthFromEnd(head, n):
     		return head
 
     	else:
-	    	while(second_ptr.next!=None):
+	    	while second_ptr.next:
 	    		first_ptr = first_ptr.next
 	    		second_ptr = second_ptr.next
 
@@ -45,13 +45,13 @@ def main():
 		newnode.next = temp
 		newnode = temp
 		
-	phead= head_node
-	while phead!=None:
+	phead = head_node
+	while phead:
 		sys.stdout.write("%s," % phead.val)
 		phead = phead.next
 	print ""
 	sol = removeNthFromEnd(head_node,1)
-	while(sol!=None):
+	while sol:
 		sys.stdout.write("%s," % sol.val)
 		sol = sol.next
 	print ""
