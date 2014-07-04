@@ -31,8 +31,8 @@ def swap_nodes_in_pairs(head):
 			succ = curr.next
 		else:
 			break
-	return head.next # note that we added a dummy node
-
+	return head.next
+	
 def main():
 	newnode = ListNode(2)
 	head_node = newnode
