@@ -19,11 +19,12 @@ def letter_combinations_of_phone_number(digits):
 	result = list()
 	if len(digits) == 0:
 		return [""]
-	
+	#Recursive:
 	temp = [i for i in teldict[int(digits[0])]]
-    # Recursion case. Append the recursion result to each string for current digit.
 	for tail in letter_combinations_of_phone_number(digits[1:]):
 		result.extend([i+tail for i in temp])
+		
+	#Non-recursive approach:
 	'''
 	for i in xrange(len(digits)):
 		dset = teldict[digits[i]]
