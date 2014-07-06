@@ -6,3 +6,8 @@ For example, given n = 3, a solution set is:
 ```
 "((()))", "(()())", "(())()", "()(())", "()()()"
 ```
+
+Run the program:
+```
+python generate_parentheses.py 3
+```
