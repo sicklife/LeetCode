@@ -8,3 +8,7 @@ Returns a pointer to the first occurrence of needle in haystack, or null if need
 # @return a string or None
 def strStr(self, haystack, needle):
 ```
+Run the program:
+```
+python implement_strStr.py
+```
