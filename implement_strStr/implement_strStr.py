@@ -4,6 +4,7 @@ __author__ = ['Yue']
 __version__ = "0.0.1"
 
 #reference: http://codesays.com/2014/solution-to-implement-strstr-by-leetcode/
+#KMP
 def strStr(haystack, needle):
 	# Hanlde two special cases.
 	if needle == "":        return haystack
@@ -23,7 +24,7 @@ def strStr(haystack, needle):
 		else:
 			# Completely the same
 			return haystack[begin:]
-
+		
 		begin += 1
 
 	return None
