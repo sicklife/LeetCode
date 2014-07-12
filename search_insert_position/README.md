@@ -12,3 +12,9 @@ Here are few examples.
 [1,3,5,6], 7 → 4
 [1,3,5,6], 0 → 0
 ```
+Test the program:
+```
+python search_insert_position.py 4
+```
+In this case, 4 is the target and the sorted list is generated randomly.
+
