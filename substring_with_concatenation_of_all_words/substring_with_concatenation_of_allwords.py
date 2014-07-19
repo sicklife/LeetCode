@@ -1,5 +1,7 @@
 #!/usr/bin/python
 import cPickle, string, numpy, getopt, sys, random, time, re, pprint
+#Reference: http://codesays.com/2014/solution-to-substring-with-concatenation-of-all-words-by-leetcode/
+
 __author__ = ['Yue']
 __version__ = "0.0.1"
 
