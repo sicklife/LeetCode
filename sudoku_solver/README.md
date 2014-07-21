@@ -15,3 +15,8 @@ A sudoku puzzle...
 [![Example](sudoku-sol.png)](https://raw.github.com/yning/Interview-Questions/master/sudoku-sol.png)
 
 ...and its solution numbers marked in red.
+
+Run the program:
+```
+python sudoku_solver.py
+```
