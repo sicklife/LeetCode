@@ -14,8 +14,6 @@ The solution set must not contain duplicate combinations.
 ```
 For example, given candidate set 2,3,6,7 and target 7, 
 A solution set is: 
-
 [7]
-
 [2, 2, 3] 
 ```
