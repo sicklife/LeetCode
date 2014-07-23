@@ -16,3 +16,7 @@ A solution set is:
 [2, 6] 
 [1, 1, 6] 
 ```
+Run the program:
+```
+python combination_sum2.py
+```
