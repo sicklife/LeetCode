@@ -17,3 +17,7 @@ A solution set is:
 [7]
 [2, 2, 3] 
 ```
+Run the program:
+```
+python combination_sum.py
+```
