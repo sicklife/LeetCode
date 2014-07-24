@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import cPickle, string, numpy, getopt, sys, random, time, re, pprint
+# Reference: http://codesays.com/2014/solution-to-count-and-say-by-leetcode/
 __author__ = ['Yue']
 __version__ = "0.0.1"
 # Start from 1, count numbers in the last line
