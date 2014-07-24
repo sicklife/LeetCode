@@ -12,3 +12,8 @@ The count-and-say sequence is the sequence of integers beginning as follows:
 Given an integer n, generate the nth sequence.
 
 Note: The sequence of integers will be represented as a string.
+
+Run the program:
+```
+python count_and_say.py
+```
