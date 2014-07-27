@@ -8,3 +8,8 @@ and [3,4,-1,1] return 2.
 ```
 
 Your algorithm should run in O(n) time and uses constant space.
+
+Run the program:
+```
+python first_missing_positive_int.py
+```
