@@ -6,8 +6,8 @@ __version__ = "0.0.1"
 
 def pow(x, n):
 	return x**n
-def pow_recursive(x, n):
 
+def pow_recursive(x, n):
 	if n == 0:	return 1
 	elif n < 0:	return 1.0 / pow_recursive(x, -n)
 	elif n ==1 : return x
@@ -34,7 +34,9 @@ def pow_iterative(x, n):
 
 
 def main():
-	x = 2; n = 5
+	x = int(sys.argv[1])
+	n = int(sys.argv[2])
+	#x = 2; n = 5
 	#result = pow(x, n)
 	#result = pow_recursive(x, n)
 	result = pow_iterative(x, n)
