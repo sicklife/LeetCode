@@ -10,3 +10,7 @@ Input: numbers={2, 7, 11, 15}, target=9
 Output: index1=1, index2=2
 ```
 
+Run Python Script:
+```
+python 2sum.py
+```
