@@ -25,7 +25,26 @@ def zigzag_conversion(mystr, nrows):
 			j += size
 
 	return str(result)
-		
+	
+
+def zigzag(mystr, n):
+    a = [[] for i in range(int(n)) ]	#创建一个list，包含n个空list，
+    strlist = list(mystr) #将原始字符串变为一个list
+    i = 0 #计数器
+    counter = -1 #变向器
+    while strlist != []:
+        a[i].append(strlist.pop(0)) #用pop()函数将原始字符串内的字母，填入相应的list内
+        if i % (int(n)-1) == 0: 
+            counter += 1 #到头后，变向。
+        i += (-1) ** counter #计数器，决定下一次填入的list
+    for j in a:
+        for i in j:
+            print(i, end='')
+
+if __name__ == '__main__':
+    zigzag('aaaabbbbccccdddd', 4)
+
+	
 def main():
 	mystr = sys.argv[1]
 	n = int(sys.argv[2])
