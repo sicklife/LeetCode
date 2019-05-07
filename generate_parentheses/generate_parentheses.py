@@ -3,6 +3,7 @@ import cPickle, string, numpy, getopt, sys, random, time, re, pprint
 __author__ = ['Yue']
 __version__ = "0.0.1"
 
+# 这个其实就是之前判断合法性的逆操作
 def generate_parentheses(n):
 	n = int(n)
 	result = list()
