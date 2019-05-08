@@ -25,6 +25,25 @@ def merge_k_sorted_lists(lists):
         if pop[1].next: heapq.heappush(heap, (pop[1].next.val, pop[1].next))
     return head.next
 
+# 暴力方法
+class Solution(object):
+    def mergeKLists(self, lists):
+        """
+        :type lists: List[ListNode]
+        :rtype: ListNode
+        """
+        self.nodes = []
+        head = point = ListNode(0)
+        for l in lists:
+            while l:
+                self.nodes.append(l.val)
+                l = l.next
+        for x in sorted(self.nodes):
+            point.next = ListNode(x)
+            point = point.next
+        return head.next
+
+
 def main():
     headnodes = list()
 
