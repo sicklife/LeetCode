@@ -24,6 +24,26 @@ def helper(result, stack, leftnum, rightnum):
 	if rightnum > 0:
 		helper(result, stack+')', leftnum, rightnum-1)
 
+
+class Solution(object):
+    def generateParenthesis(self, N):
+        result = []
+        
+        def generator(s="", left=0, right=0):
+            if len(s) == 2*N:
+                result.append(s)
+                return
+            # 当左括号还可以添加时，我们加一个左括号
+            if left < N:
+                generator(s+"(", left+1, right)
+            # 当左括号数量大于右括号数量时，我们也可以加一个右括号
+            if right < left:
+                # 需要搞懂这里的left什么时候是2
+                generator(s+")", left, right+1)
+        
+        generator()
+        return result
+
 def main():
 	n = sys.argv[1]
 	result = generate_parentheses(n)
