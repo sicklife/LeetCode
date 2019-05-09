@@ -5,6 +5,21 @@ __version__ = "0.0.1"
 
 #Reference: http://chaoren.is-programmer.com/posts/42597.html
 
+# 多年之后，再看这个，感慨万千
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        t_dict = {target-nums[i]: i for i in range(len(nums))}
+         # print t_dict
+
+        for i in range(len(nums)):
+            if t_dict.get(nums[i]) and i != t_dict.get(nums[i]):
+                return [i, t_dict[nums[i]]]
+
 def two_sum(mylist, target):
 	#mylist = sorted(mylist)
 	d = dict()
